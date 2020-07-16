@@ -9,9 +9,28 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/banner_area.css">
+    <style>
+        .loadinggif {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: hotpink;
+            z-index: 999;
+        }
+
+        .loadinggif img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 
 <body>
+    <div class="loadinggif">
+        <img src="./images/loading01.gif" alt="">
+    </div>
     <div class="shortcut">
         <div class="w">
             <p class="fl">品忧购欢迎您！请&nbsp;
@@ -315,6 +334,12 @@
             </div>
         </div>
     </div>
+    <script>
+        let gif = document.querySelector('.loadinggif');
+        window.onload = function () {
+            gif.style.display = 'none';
+        };
+    </script>
 </body>
 
 </html>
