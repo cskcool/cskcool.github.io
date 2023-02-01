@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/echarts.js"></script>
+    <script src="./js/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+    <div class="line-chart" style="width: 600px;height:400px;"></div>
+    <script>
+        var myChart = echarts.init($('.line-chart')[0]);
+        var dataarr = [
+            [
+                [24, 40, 101, 134, 90, 230, 210, 230, 120, 230, 210, 120],
+                [40, 64, 191, 324, 290, 330, 310, 213, 180, 200, 180, 79]
+            ],
+            [
+                [23, 75, 12, 97, 21, 67, 98, 21, 43, 64, 76, 38],
+                [43, 31, 65, 23, 78, 21, 82, 64, 43, 60, 19, 34]
+            ],
+            [
+                [34, 87, 32, 76, 98, 12, 32, 87, 39, 36, 29, 36],
+                [56, 43, 98, 21, 56, 87, 43, 12, 43, 54, 12, 98]
+            ],
+            [
+                [4, 7, 6, 5, 9, 5, 8, 4, 8, 14, 15, 13],
+                [3, 5, 3, 8, 3, 4, 6, 6, 9, 15, 15, 14]
+            ]
+        ];
+        option = {
+            title: {
+                text: '未来一周气温变化',
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data: ['最高气温', '最低气温']
+            },
+            xAxis: {
+                axisLine: {
+                    lineStyle: {
+                        color: '#0078d4',
+                    }
+                },
+                type: 'category',
+                boundaryGap: false,
+                data: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+            },
+            yAxis: {
+                axisLine: {
+                    lineStyle: {
+                        color: '#0078d4',
+                    }
+                },
+                type: 'value',
+                axisLabel: {
+                    formatter: '{value}'
+                }
+            },
+            series: [
+                {
+                    smooth: true,
+                    name: '最高气温',
+                    type: 'line',
+                    data: dataarr[1][0],
+                },
+                {
+                    smooth: true,
+                    name: '最低气温',
+                    type: 'line',
+                    data: dataarr[1][1],
+
+                }
+            ]
+        };
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+
+</html>

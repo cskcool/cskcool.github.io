@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/echarts.js"></script>
+</head>
+
+<body>
+    <div class="circuit-chart" style="width: 600px;height:400px;"></div>
+    <script>
+        var myChart = echarts.init($('.circuit-chart')[0]);
+
+        option = {
+            series: [
+                {
+                    startAngle: 180,
+                    name: '访问来源',
+                    type: 'pie',
+                    radius: ['50%', '70%'],
+                    avoidLabelOverlap: true,
+                    label: {
+                        show: false,
+                        position: 'center'
+                    },
+                    labelLine: {
+                        show: false
+                    },
+                    data: [
+                        { value: 150, name: '已完成 ' },
+                        { value: 50, name: '未完成 ' },
+                        { value: 200, name: 'null', itemStyle: { color: 'transparent' } }
+                    ],
+                    hoverAnimation: false
+                }
+            ]
+        };
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+
+</html>

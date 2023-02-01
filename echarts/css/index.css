@@ -1,0 +1,427 @@
+body{
+    background: url(../images/bg.jpg) no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    color: #4C9BFD;
+}
+a{
+    color: #4C9BFD;
+}
+.borderimage {
+    position: relative;
+    border: 10px solid transparent;
+    border-width: 51px 40px 21px 130px;
+    border-image: url(../images/border.png) 51 40 21 130 round;
+}
+.innerbox {
+    position: absolute;
+    top: -51px;
+    right: -40px;
+    bottom: -21px;
+    left: -130px;
+    padding: 20px 30px;
+    overflow: hidden;
+}
+.main-container{
+    max-width: 1920px;
+    min-width: 1300px;
+    min-height: 768px;
+    margin: 0 auto;
+    background: url(../images/logo.png) no-repeat 0 0 / contain;
+    padding: 80px 20px 0;
+}
+
+.content-box{
+    width: 100%;
+    display: flex;
+}
+
+.content-box .col1{
+    flex: 3;
+}
+.content-box .col2{
+    flex: 4;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+.content-box .col3{
+    flex: 3;
+}
+.content-box .col1 .device-box {
+    /* width: 100%; */
+    margin-top: 12px;
+    height: 110px;
+}
+.device-box .item{
+    float: left;
+    width: 25%;
+}
+.device-box .item h4{
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.device-box .item span{
+    font-size: 15px;
+}
+
+/* 设备监控盒子 */
+.content-box .col1 .dev-monitor {
+    
+    height: 474px;
+    margin-top: 20px;
+    
+}
+.content-box .col1 .dev-monitor .content-frame{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.dev-monitor a{
+    display: inline-block;
+    font-size: 18px;
+    padding: 0px 20px;
+}
+.dev-monitor a.current{
+    color: #fff;
+}
+.dev-monitor a:nth-child(1){
+    border-right: 3px solid skyblue;
+}
+.dev-monitor .head{
+    display: flex;
+    width: 100%;
+    height: 38px;
+    background-color: rgba(255, 255, 255, .2);
+    padding: 0 20px;
+    line-height: 38px;
+    font-size: 15px;
+}
+
+.dev-monitor .head .time{
+    flex: 1;
+}
+.dev-monitor .head .dev-addr{
+    flex: 2;
+}
+.dev-monitor .head .error-code{
+    flex: 1;
+}
+.dev-monitor .content {
+    position: absolute;
+    padding: 0 20px;
+    
+}
+.dev-monitor .content .row{
+    position: relative;
+    height: 30px;
+
+}
+.dev-monitor .content .row span{
+    float: left;
+    line-height: 30px;
+}
+
+.dev-monitor .content .row span:nth-child(1){
+    width: 25%;
+}
+.dev-monitor .content .row span:nth-child(2){
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dev-monitor .content .row span:nth-child(3){
+    width: 25%;
+}
+/* row前面的小图标 */
+.dev-monitor .content .row i{
+    display: none;
+    position: absolute;
+    top: 9px;
+    left: -15px;
+}
+.dev-monitor .content .row:hover{
+    background-color: rgba(255, 255, 255, .2);
+}
+.dev-monitor .content .row:hover i{
+    display: block;
+}
+
+/* 点位分布统计 */
+.pointer{
+    height: 330px;
+    margin-top: 20px;
+}
+.pointer h4{
+    font-size:20px ;
+    padding: 10px;
+    color: #fff;
+}
+/* 饼图 */
+.pointer .detail .pie-chart{
+    float: left;
+    width: 60%;
+    height: 240px;
+    background-color: rgba(255, 255, 255, .2);
+}
+.pointer .detail .data{
+    float: left;
+    width: 40%;
+    height: 240px;
+    background: url(../images/rect.png) no-repeat 0 0 / cover;
+    text-align: center;
+    /* overflow: hidden; */
+}
+.pointer .item{
+    margin-top: 55px;
+}
+.pointer .item h3{
+    font-size: 25px;
+    color: #fff;
+}
+.pointer .item span{
+    position: relative;
+}
+.pointer .item span i{
+    position: absolute;
+    top: 1px;
+    left: -12px;
+}
+
+/* 第二栏 */
+
+.col2 .col2-title h3{
+    padding: 40px 0px 20px;
+    font-size: 20px;
+    color: #fff;
+}
+/* 地图 */
+.col2 .map-chart{
+    width: 100%;
+    height: 520px;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+/* 全国用户数量统计 */
+.col2 .user-count{
+    height: 330px;
+    margin-top: 20px;
+}
+.col2 .user-count h4{
+    font-size:20px ;
+    padding: 10px;
+    color: #fff;
+}
+
+.user-count .detail .col-chart{
+    float: left;
+    width: 60%;
+    height: 240px;
+    background-color: rgba(255, 255, 255, .2);
+}
+.user-count .detail .data{
+    float: left;
+    width: 40%;
+    height: 240px;
+    background: url(../images/rect.png) no-repeat 0 0 / cover;
+    text-align: center;
+    /* overflow: hidden; */
+}
+.user-count .item{
+    margin-top: 55px;
+}
+.user-count .item h3{
+    font-size: 25px;
+    color: #fff;
+}
+.user-count .item span{
+    position: relative;
+}
+.user-count .item span i{
+    position: absolute;
+    top: 1px;
+    left: -12px;
+}
+
+/* 第三栏 */
+.order-count{
+    margin-top: 12px;
+    width: 100%;
+    height: 145px;
+    color: #fff;
+}
+.order-count .filter a{
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 15px;
+    border-right: 2px solid skyblue;
+}
+
+.order-count .filter a.current{
+    color: #fff;
+}
+.order-count .item{
+    float: left;
+    width: 50%;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.order-count .item h3{
+    font-size: 22px;
+    margin-bottom: 10px ;
+}
+
+/* 销售统计 */
+.sales-count{
+    margin-top: 20PX;
+    height:245px ;
+}
+.sales-count .filter span{
+    display: inline-block;
+    font-size: 18px;
+    width: 40%;
+    border-right: 2px solid skyblue;
+    /* margin-right: 18px; */
+    /* padding-right: 18px; */
+}
+.sales-count .filter a{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    padding: 2px;
+    font-size: 18px;
+}
+.sales-count .filter a.current{
+    color: #fff;
+    border-radius: 2px;
+    background-color: #4C9BFD;
+}
+.sales-count .line-chart{
+    margin-top: 10px;
+    width: 100%;
+    height: 170px;
+    background-color: rgba(255, 255, 255, .2);
+}
+.sales-detail{
+    margin-top: 20px;
+    width: 100%;
+    height: 230px;
+}
+.sales-detail .left-item{
+    float: left;
+    height: 230px;
+}
+.sales-detail .right-item{
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 230px;
+}
+.sales-detail h4{
+    font-size:15px ;
+    color: #fff;
+}
+.sales-detail .left-item{
+    width: 46%;
+}
+.sales-detail .percent{
+    float: left;
+    width: 50%;
+    margin-top: 25px;
+    font-size: 26px;
+    color: #fff;
+}
+.sales-detail span{
+    float: left;
+    width: 50%;
+}
+.sales-detail .right-item .circuit-chart{
+    
+    margin-top: 5px;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(255, 255, 255, .2);
+}
+.sales-detail .right-item  .data span{
+    position: absolute;
+    font-size: 25px;
+    color: #fff;
+    left: 55%;
+    top: 45%;
+    transform: translate(-25%,-50%);
+}
+/* 热销产品 */
+.hot-product {
+    height: 274px;
+    margin-top: 20px;
+}
+.hot-product .left-board{
+    float: left;
+    width: 30%;
+}
+.hot-product .left-board h3{
+    font-size: 20px;
+    color: white;
+}
+.hot-product .left-board li{
+    height: 50px;
+}
+.hot-product .left-board li span{
+    display: inline-block;
+    color: #fff;
+    text-indent: 1em;
+    font-size: 15px;
+    line-height: 50px;
+}
+.hot-product .left-board i{
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 30px;
+}
+.hot-product .right-detail {
+    width: 70%;
+    float: right;
+}
+.hot-product .right-detail h3{
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+}
+.hot-product .right-detail .day30{
+    float: right;
+}
+.top-city{
+    width: 50%;
+    height: 150px;
+    float: left;
+}
+.top-city li{
+    padding-left: 1em;
+    height: 30px;
+    line-height: 30px;
+}
+.top-city li.current{
+    background-color: rgba(255, 255, 255, .2);
+}
+.top-city li span{
+    padding-left: 2em;
+}
+.sales-growth{
+    float: right;
+    width: 50%;
+    height: 180px;
+    background-color: rgba(255, 255, 255, .2);
+}
+.sales-growth li{
+    height: 30px;
+    line-height: 30px;
+}
+.sales-growth del,
+.sales-growth b{
+    float: right;
+    vertical-align: middle;
+    line-height: 30px;
+}

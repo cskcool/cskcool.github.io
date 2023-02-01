@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0",user>
+    <title>数据看板</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./fonts/icomoon.css">
+    <!-- 导入jquery -->
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/index.js"></script>
+
+    <!-- 导入echart图表插件 -->
+    <script src="./js/echarts.js"></script>
+    <script src="./js/china.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="content-box">
+            <div class="col1">
+                <div class="device-box borderimage ">
+                    <div class="innerbox">
+                        <div class="item">
+                            <h4>
+                                2,190
+                            </h4>
+                            <span>
+                                <i class="icon-dot" style="color: red;"></i>
+                                设备总数
+                            </span>
+                        </div>
+                        <div class="item">
+                            <h4>
+                                190
+                            </h4>
+                            <span>
+                                <i class="icon-dot" style="color: red;"></i>
+                                设备总数
+                            </span>
+                        </div>
+                        <div class="item">
+                            <h4>
+                                3,001
+                            </h4>
+                            <span>
+                                <i class="icon-dot" style="color: red;"></i>
+                                设备总数
+                            </span>
+                        </div>
+                        <div class="item">
+                            <h4>
+                                108
+                            </h4>
+                            <span>
+                                <i class="icon-dot" style="color: red;"></i>
+                                设备总数
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dev-monitor borderimage">
+                    <div class="innerbox">
+                        <div class="title">
+                            <a href="javascript:void(0);" class="current">故障设备监控</a>
+                            <a href="javascript:void(0);">异常设备监控</a>
+                        </div>
+                        <div class="head">
+                            <div class="time">
+                                故障时间
+                            </div>
+                            <div class="dev-addr">
+                                设备地址
+                            </div>
+                            <div class="error-code">
+                                异常代码
+                            </div>
+                        </div>
+                        <div class="content-frame">
+                            <div class="content">
+                                <div class="row">
+                                    <span>20200706</span><span>广东省深圳市宝安区石岩街道创维天桥</span><span>1111110</span>
+                                    <i class="icon-dot" style="color: skyblue;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>20200706</span><span>广东省深圳市宝安区石岩街道创维天桥</span><span>111110</span>
+                                    <i class="icon-dot" style="color: skyblue;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>20200706</span><span>广东省深圳市宝安区石岩街道创维天桥</span><span>110111</span>
+                                    <i class="icon-dot" style="color: skyblue;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>20200706</span><span>广东省深圳市宝安区石岩街道创维天桥</span><span>1101111</span>
+                                    <i class="icon-dot" style="color: skyblue;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>20200706</span><span>广东省深圳市宝安区石岩街道创维天桥</span><span>11110111</span>
+                                    <i class="icon-dot" style="color: skyblue;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>20200706</span><span>广东省深圳市宝安区石岩街道创维天桥</span><span>1111110</span>
+                                    <i class="icon-dot" style="color: skyblue;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>20200706</span><span>广东省深圳市宝安区石岩街道创维天桥</span><span>110111</span>
+                                    <i class="icon-dot" style="color: skyblue;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>20200706</span><span>广东省深圳市宝安区石岩街道创维天桥</span><span>111110</span>
+                                    <i class="icon-dot" style="color: skyblue;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>20200706</span><span>广东省深圳市宝安区石岩街道创维天桥</span><span>1111110</span>
+                                    <i class="icon-dot" style="color: skyblue;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>20200706</span><span>广东省深圳市宝安区石岩街道创维天桥</span><span>14411110</span>
+                                    <i class="icon-dot" style="color: skyblue;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>20200706</span><span>广东省深圳市宝安区石岩街道创维天桥</span><span>111110</span>
+                                    <i class="icon-dot" style="color: skyblue;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>20200706</span><span>广东省深圳市宝安区石岩街道创维天桥</span><span>1111110</span>
+                                    <i class="icon-dot" style="color: skyblue;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>20200706</span><span>广东省深圳市宝安区石岩街道创维天桥</span><span>177710</span>
+                                    <i class="icon-dot" style="color: skyblue;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>20200706</span><span>广东省深圳市宝安区石岩街道创维天桥</span><span>177710</span>
+                                    <i class="icon-dot" style="color: skyblue;"></i>
+                                </div>
+                                <div class="row">
+                                    <span>20200706</span><span>广东省深圳市宝安区石岩街道创维天桥</span><span>118880</span>
+                                    <i class="icon-dot" style="color: skyblue;"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pointer borderimage">
+                    <div class="innerbox">
+                        <h4>点位分布统计</h4>
+                        <div class="detail">
+                            <div class="pie-chart"></div>
+                            <div class="data">
+                                <div class="item">
+                                    <h3>320,11</h3>
+                                    <span>点位总数
+                                        <i class="icon-dot" style="color: red;"></i>
+                                    </span>
+                                </div>
+                                <div class="item">
+                                    <h3>418</h3>
+                                    <span>本月新增
+                                        <i class="icon-dot" style="color: yellow;"></i>
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="col2-title">
+                    <h3>
+                        <i class="icon-cube" style="color: royalblue;"></i>
+                        设备数据统计</h3>
+                </div>
+                <div class="map-chart">
+                    <div class="map">
+
+                    </div>
+                </div>
+
+                <div class="user-count borderimage">
+                    <div class="innerbox">
+                        <h4>全国用户总量统计</h4>
+                        <div class="detail">
+                            <div class="col-chart"></div>
+                            <div class="data">
+                                <div class="item">
+                                    <h3>120,899</h3>
+                                    <span>
+                                        <i class="icon-dot" style="color: red;"></i>用户总量
+                                    </span>
+                                </div>
+                                <div class="item">
+                                    <h3>248</h3>
+                                    <span>本月新增
+                                        <i class="icon-dot" style="color: yellow;"></i>
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col3">
+                <div class="order-count borderimage">
+                    <div class="innerbox">
+                        <!-- 顶部筛选 -->
+                        <div class="filter">
+                            <a href="javascript:void(0);">365天</a>
+                            <a class="current" href="javascript:void(0);">90天</a>
+                            <a href="javascript:void(0);">30天</a>
+                            <a href="javascript:void(0);">24小时</a>
+                        </div>
+                        <div class="item">
+                            <h3>120,899</h3>
+                            <span>
+                                <i class="icon-dot" style="color: red;"></i>订单量
+                            </span>
+                        </div>
+                        <div class="item">
+                            <h3>120,899</h3>
+                            <span>
+                                <i class="icon-dot" style="color: yellow;"></i>销售额(万元)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sales-count borderimage">
+                    <div class="innerbox">
+                        <div class="filter">
+                            <span>销售额统计</span>
+                            <a class="current" href="javascript:void(0);">年</a>
+                            <a href="javascript:void(0);">季</a>
+                            <a href="javascript:void(0);">月</a>
+                            <a href="javascript:void(0);">周</a>
+                        </div>
+                        <div class="line-chart">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="sales-detail">
+                    <div class="left-item borderimage">
+                        <div class="innerbox">
+                            <h4>
+                                渠道分布
+                            </h4>
+                            <div>
+                                <h3 class="percent">39%</h3>
+                                <h3 class="percent">&nbsp;28%</h3>
+                                <span>
+                                    <i class="icon-plane" style="color: yellow;"></i>
+                                    机场
+                                </span>
+                                <span>
+                                    <i class="icon-bag" style="color: yellow;"></i>
+                                    商场
+                                </span>
+                            </div>
+                            <div>
+                                <h3 class="percent">39%</h3>
+                                <h3 class="percent">&nbsp;28%</h3>
+                                <span>
+                                    <i class="icon-bus" style="color: yellow;"></i>
+                                    地铁
+                                </span>
+                                <span>
+                                    <i class="icon-train" style="color: yellow;"></i>
+                                    火车站
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="right-item borderimage">
+                        <div class="innerbox">
+                            <h4>
+                                一季度销售进度
+                            </h4>
+                            <div class="circuit-chart">
+
+                            </div>
+                            <div class="data">
+                                <span>75%</span>
+                            </div>
+                            <div>
+                                <span class="percent">1,321</span>
+                                <span class="percent">&nbsp;150%</span>
+                                <span>
+                                    <i class="icon-dot" style="color: yellow;"></i>
+                                    销售额(万)
+                                </span>
+                                <span>
+                                    <i class="icon-dot" style="color: yellow;"></i>同比增长
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hot-product borderimage">
+                    <div class="innerbox">
+                        <div class="left-board">
+                            <h3>全国热榜</h3>
+                            <ul>
+                                <li><i class="icon-cup1" style="color: #d93f36;"></i><span>可爱多</span> </li>
+                                <li><i class="icon-cup2" style="color: #68d8fe;"></i><span>哇哈哈</span> </li>
+                                <li><i class="icon-cup3" style="color: #4c9bfd;"></i><span>喜之郎</span> </li>
+                            </ul>
+                        </div>
+                        <div class="right-detail">
+                            <div class="title">
+                                <h3>各省热销</h3>
+                                <span class="day30">//近30日//</span>
+                            </div>
+                            <ul class="top-city">
+                                <li class="current"><b>北京</b><span>1.111</span>
+                                    <del class="icon-up" style="color: #d93f36;">
+                                </li>
+                                <li><b>上海</b><span>1.111</span>
+                                    <del class="icon-up" style="color: #d93f36;">
+                                </li>
+                                <li><b>广州</b><span>1.111</span>
+                                    <del class="icon-up" style="color: #d93f36;">
+                                </li>
+                                <li><b>深圳</b><span>1.111</span>
+                                    <del class="icon-up" style="color: #d93f36;">
+                                </li>
+                                <li><b>杭州</b><span>1.111</span>
+                                    <del class="icon-up" style="color: #d93f36;">
+                                </li>
+                            </ul>
+                            <ul class="sales-growth">
+                                <li>
+                                    <span>喜之郎</span>
+                                    <del class="icon-up" style="color: #d93f36;"></del>
+                                    <b>1.243</b>
+                                </li>
+                                <li>
+                                    <span>喜你在</span>
+                                    <del class="icon-up" style="color: #d93f36;"></del>
+                                    <b>1.243</b>
+                                </li>
+                                <li>
+                                    <span>喜你是</span>
+                                    <del class="icon-up" style="color: #d93f36;"></del>
+                                    <b>1.243</b>
+                                </li>
+                                <li>是喜你</span>
+                                    <del class="icon-up" style="color: #d93f36;"></del>
+                                    <b>1.243</b>
+                                </li>
+                                <li>
+                                    <span>速喜你</span>
+                                    <del class="icon-up" style="color: #d93f36;"></del>
+                                    <b>1.243</b>
+                                </li>
+                                <li>
+                                    <span>之郎</span>
+                                    <del class="icon-up" style="color: #d93f36;"></del>
+                                    <b>1.243</b>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
