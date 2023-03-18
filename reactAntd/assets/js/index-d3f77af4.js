@@ -1,1 +1,0 @@
-import{j as e}from"./index-0792bc02.js";var r="C:\\Users\\cskcool\\Desktop\\work\\xxx\\react-antv-admin\\src\\views\\dashboard\\embedded\\index.tsx";const s=()=>e.exports.jsxDEV("iframe",{src:"https://cn.bing.com/",frameBorder:"0",className:"card full-iframe"},void 0,!1,{fileName:r,lineNumber:4,columnNumber:9},void 0);export{s as default};
