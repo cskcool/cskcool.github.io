@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +13,9 @@
     <script src="./echarts/js/jquery-1.11.3.min.js"></script>
     <script src="./index.js"></script>
 </head>
+
 <body>
-    <div class="main-box">
+    <!-- <div class="main-box">
         <div class="my-home">
             <a href="http://cskcool.github.io/vue3admin">
             <i class="layui-icon layui-icon-website"></i> 
@@ -48,6 +50,122 @@
             <i class="layui-icon layui-icon-username"></i> 
             <h3>简历</h3>
         </div>
+    </div> -->
+    <!-- Page Loader -->
+    <div id="loader">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
     </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- <header>
+                <h1>Your Name</h1>
+                <p>Web Developer &amp; Designer</p>
+            </header> -->
+
+        <section>
+            <h2>关于</h2>
+            <p>欢迎来到cskool的前端世界，在这里，我作为一位专注于Web前端开发的极客，将与您分享一系列互动项目及技术见解。</p>
+        </section>
+
+        <section>
+            <h2>技能展示</h2>
+            <div class="project-box">
+                <div class="project-card" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+                    <!-- <img src="project1.jpg" alt="Project 1" class="project-image"> -->
+                    <div class="project-details">
+                        <!-- <h3 class="project-title"><a href="https://github.com/yourusername/project1" target="_blank">Project 1</a></h3> -->
+                        <p class="project-description">Vue3.x+ Vite后台系统模板</p>
+                    </div>
+                    <a href="http://cskcool.github.io/vue3admin">
+                        <i class="layui-icon layui-icon-website"></i> 
+                        <h3>vue3+elementPlus展示</h3>
+                        </a>
+                </div>
+
+                <div class="project-card" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+                    <div class="project-details">
+                        <p class="project-description">echarts看板项目</p>
+                    </div>
+                    <a href="http://cskcool.github.io/echarts">
+                        <i class="layui-icon  layui-icon-senior"></i> 
+                        <h3>jQuery+eCharts展示</h3>
+                        </a>
+                </div>
+
+                <div class="project-card" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+                    <div class="project-details">
+                        <p class="project-description">使用react hooks 以及 antd 的后台管理系统模板</p>
+                    </div>
+                    <a href="http://cskcool.github.io/reactAntd">
+                        <i class="layui-icon layui-icon-cart"></i> 
+                        <h3>react+antd展示</h3>
+                        </a>
+                </div>
+
+                <div class="project-card" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+                    <div class="project-details">
+                        <p class="project-description">cskcool的博客园，分享一些技术见解</p>
+                    </div>
+                    <a href="https://www.cnblogs.com/cskcool/">
+                        <i class="layui-icon layui-icon-fonts-strong"></i> 
+                        <h3>博客</h3>
+                        </a>
+                </div>
+
+                <div class="project-card" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+                    <div class="project-details">
+                        <p class="project-description">日常折腾的一些代码</p>
+                    </div>
+                    <a href="https://gitee.com/cskcool">
+                        <i class="layui-icon layui-icon-template-1"></i> 
+                        <h3>Gitee</h3>
+                        </a>
+                </div>
+
+                <!-- <div class="project-card" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+                    <div class="project-details">
+                        <p class="project-description">Description of Project 2.</p>
+                    </div>
+                    <i class="layui-icon layui-icon-username"></i> 
+                    <h3>简历</h3>
+                </div> -->
+            </div>
+
+        </section>
+
+        <section>
+            <h2>联系</h2>
+            <p>欢迎给我发邮件 <a href="mailto:cskcool@163.com">cskcool@163.com</a></p>
+        </section>
+    </div>
+
+    <script>
+        // Hide loader and show content when page is fully loaded
+        window.addEventListener('load', function () {
+            var loader = document.getElementById('loader');
+            var content = document.querySelector('.content');
+
+            setTimeout(function () {
+                loader.style.display = 'none';
+                content.style.display = 'block';
+            }, 600);
+        });
+
+        // Project Card functionality
+        function showDetails(card) {
+            var details = card.querySelector('.project-details');
+            details.style.opacity = '1';
+        }
+
+        function hideDetails(card) {
+            var details = card.querySelector('.project-details');
+            details.style.opacity = '0';
+        }
+    </script>
 </body>
+
 </html>
