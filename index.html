@@ -145,15 +145,15 @@
 
     <script>
         // Hide loader and show content when page is fully loaded
-        window.addEventListener('load', function () {
+        // window.addEventListener('load', function () {
             var loader = document.getElementById('loader');
             var content = document.querySelector('.content');
 
             setTimeout(function () {
                 loader.style.display = 'none';
                 content.style.display = 'block';
-            }, 600);
-        });
+            }, 1000);
+        // });
 
         // Project Card functionality
         function showDetails(card) {
