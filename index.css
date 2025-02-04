@@ -98,7 +98,9 @@ body {
 
 /* Main Content Styles */
 .content {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 header {
