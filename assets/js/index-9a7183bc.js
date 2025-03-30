@@ -1,0 +1,1 @@
+import{a as e,j as s}from"./index-c7f00ea9.js";const t=()=>e("div",{className:"card content-box",children:s("span",{className:"text",children:["掘金文档：",e("a",{href:"https://juejin.cn/user/3263814531551816/posts",target:"_blank",rel:"noreferrer",children:"https://juejin.cn/user/3263814531551816/posts"})," ","🍒🍉🍊"]})});export{t as default};

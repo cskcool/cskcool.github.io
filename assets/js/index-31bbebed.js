@@ -1,0 +1,1 @@
+import{a as e,j as r}from"./index-c7f00ea9.js";const a=()=>e("div",{className:"card content-box",children:r("span",{className:"text",children:["MyBlog ：",e("a",{href:"http://www.spicyboy.cn",target:"_blank",rel:"noreferrer",children:"http://www.spicyboy.cn"})," ","🍒🍉🍊"]})});export{a as default};

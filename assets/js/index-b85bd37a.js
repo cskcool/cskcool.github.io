@@ -1,0 +1,1 @@
+import{a as t,j as e}from"./index-c7f00ea9.js";const a=()=>t("div",{className:"card content-box",children:e("span",{className:"text",children:["Github 仓库：",t("a",{href:"https://github.com/HalseySpicy/Hooks-Admin",target:"_blank",rel:"noreferrer",children:"https://github.com/HalseySpicy/Hooks-Admin"})," ","🍒🍉🍊"]})});export{a as default};
